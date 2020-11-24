@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(223, 99, 161);
+    /* background-color: rgba(228, 79, 141, 0.925); */
+    font-family: 'Futura','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+#app {
+    text-shadow: 1px 1px 2px #fff;
+}
+h1 {
+    font-size: 48px;
+}
+/* 画像表示部分 */
+main {
+    margin: 0;
+}
+main img {
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px black;
+    transform: .1s;
+}
+main img:hover {
+    transform: scale(1.1);
+}
+main div:last-child {
+    margin-bottom: 0;
+}
+main > div {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 28px;
+    color: rgb(58, 56, 56);
+}
+main .failed-text {
+    font-size: 18px;
+}
+/* アイコン */
+.loading-icon {
+    margin-top: 14px;
+    font-size: 46px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
